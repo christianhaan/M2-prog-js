@@ -10,13 +10,13 @@ class App
         let copyright = 'copyright = leerlingen and co';
         let distributeur = 'distributeur = leerling haan';
         let darkmode = 'darkmode = false'
-        console.log("appNaam: " + app.appNaam);
-        console.log("versienummer: " + app.versienummer);
-        console.log("versiedatum: " = app.versiedatum);
-        console.log("auther: " + app.auther);
-        console.log("copyriht: " + app.copyright);
-        console.log("distributeur: " + app.distributeur);
-        console.log("darkmode " = app.darkmode);
+        console.log(appNaam);
+        console.log(versienummer);
+        console.log(versiedatum);
+        console.log(auther);
+        console.log(copyright);
+        console.log(distributeur);
+        console.log(darkmode);
     }
 }
 
