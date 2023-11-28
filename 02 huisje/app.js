@@ -5,6 +5,7 @@ class App
         console.log("hello world!");
         let canvas = document.getElementById("canvasId");
         let g = canvas.getContext("2d");
+        
         //huis 1000pxl
         //dak links
         g.beginPath();
@@ -16,6 +17,7 @@ class App
         g.lineTo(200,300);
         g.closePath();
         g.fill()
+        
         //muur links
         g.beginPath();
         g.fillStyle = "blue";
@@ -23,6 +25,7 @@ class App
         g.lineTo(200,500);
         g.lineTo(600,600);
         g.lineTo(600,400);
+        
         //dak voor + muur voor
         g.moveTo(600,400);
         g.lineTo(700,200);
