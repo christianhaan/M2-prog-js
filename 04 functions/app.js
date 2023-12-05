@@ -63,6 +63,18 @@ class App
         console.log("hello world!");
         superMooieglobalfuntion();
     }
+
+    newClassFunction()
+    {
+        console.log("hello world in de nieuweClassFunction");
+    }
+
+    anotherFunctionWithArguments(aArgument)
+    {
+        console.log("kom maar met je argument");
+        console.log("hier:");
+        console.log(aArgument);
+    }
 }
 
 
@@ -74,3 +86,5 @@ argumentsAreHandy("hou het netjes!");
 
 let app = new App();
 app.runApplication();
+app.newClassFunction();
+app.anotherFunctionWithArguments("mijn argument is iets...");
