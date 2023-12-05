@@ -75,9 +75,24 @@ class App
         console.log("hier:");
         console.log(aArgument);
     }
-}
 
+    marrio()
+    {
+        console.log("MARRIO!!");
+    }
 
+    hallo()
+    {
+        let hallo2 = "BWAHAHA!!!";
+        return hallo2;
+    }
+
+    getal(a,b)
+    {
+        let question = a+b;
+        return question;
+    }
+}    
 superMooieglobalfuntion();
 superMooieglobalfuntion();
 argumentsAreHandy("Super Shout Out");
@@ -88,3 +103,6 @@ let app = new App();
 app.runApplication();
 app.newClassFunction();
 app.anotherFunctionWithArguments("mijn argument is iets...");
+app.marrio();
+console.log(app.hallo());
+console.log(app.getal(10,10));
