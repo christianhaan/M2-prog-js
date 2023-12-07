@@ -41,10 +41,111 @@ class App
         g.fill()
         g.stroke();
     }
+
+    //kerstboom
+    tekenKerstboom(g,x,y)
+    {
+
+        
+        
+        //stam
+        g.fillStyle = '#3A1f04'
+        g.fillRect(500+x, 690+y, 60, 90);
+        g.fill();
+
+                
+
+        //bladeren
+        g.beginPath();
+        g.moveTo(530, 450);
+        g.lineTo(430, 700);
+        g.lineTo(630, 700);
+        g.closePath();
+        g.fillStyle = '#00ff00';
+        g.fill();
+
+        //ballen
+        g.beginPath();
+        g.arc(530,570,10,0,Math.PI*2);
+        g.closePath();
+        g.stroke();
+        g.fillStyle = "#ffff00";
+        g.fill();
+
+        g.beginPath();
+        g.arc(520,580,10,0,Math.PI*2);
+        g.closePath();
+        g.stroke();
+        g.fillStyle = "#ffff00";
+        g.fill();
+
+        g.beginPath();
+        g.arc(510,590,10,0,Math.PI*2);
+        g.closePath();
+        g.stroke();
+        g.fillStyle = "#ffff00";
+        g.fill();
+
+        g.beginPath();
+        g.arc(500,600,10,0,Math.PI*2);
+        g.closePath();
+        g.stroke();
+        g.fillStyle = "#ffff00";
+        g.fill();
+
+        g.beginPath();
+        g.arc(540,610,10,0,Math.PI*2);
+        g.closePath();
+        g.stroke();
+        g.fillStyle = "#ffff00";
+        g.fill();
+
+        g.beginPath();
+        g.arc(550,620,10,0,Math.PI*2);
+        g.closePath();
+        g.stroke();
+        g.fillStyle = "#ffff00";
+        g.fill();
+
+        g.beginPath();
+        g.arc(530,600,10,0,Math.PI*2);
+        g.closePath();
+        g.stroke();
+        g.fillStyle = "#ffff00";
+        g.fill();
+
+        g.beginPath();
+        g.arc(565,650,10,0,Math.PI*2);
+        g.closePath();
+        g.stroke();
+        g.fillStyle = "#ffff00";
+        g.fill();
+
+        g.beginPath();
+        g.arc(560,690,10,0,Math.PI*2);
+        g.closePath();
+        g.stroke();
+        g.fillStyle = "#ffff00";
+        g.fill();
+
+        g.beginPath();
+        g.arc(555,670,10,0,Math.PI*2);
+        g.closePath();
+        g.stroke();
+        g.fillStyle = "#ffff00";
+        g.fill();
+
+        //piek
+        g.fillStyle = '#3A1F04'
+        g.fillRect(500,400,60,90);
+        g.fill();
+    }
 }
 let app = new App();
 app.runApplication();
 let canvas = document.getElementById("canvasId");
 let g = canvas.getContext("2d");
-app.tekenHuis(g, 100, 100);
-app.tekenHuis(g, 500, 500);
+//app.tekenHuis(g, 100, 100);
+//app.tekenHuis(g, 500, 500);
+app.tekenKerstboom(g, 0 ,0);
+app.piek();
