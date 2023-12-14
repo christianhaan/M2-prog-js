@@ -11,6 +11,11 @@ class App
             const element = array[i];
         console.log(i + ": "+element);
         }
+        array.push("bob dylan", "prince");
+        for (let i = 0; i < array.length; i++) {
+            const element = array[i];
+            console.log(i +": "+element);
+        }
 
         const nummers = [2, 5, 7];
         console.log(nummers);
