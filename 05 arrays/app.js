@@ -9,13 +9,14 @@ class App
         let array = ["artist1", "artist2", "artist3", "etc"];
         for (let i = 0; i < array.length; i++) {
             const element = array[i];
-        console.log(element);
+        console.log(i + ": "+element);
         }
 
-        const nummers = ["2", "5", "7"];
-        for (let index =  0; index < array.length; index++) {
-            const nummers = array[index];
+        const nummers = [2, 5, 7];
         console.log(nummers);
+        for (let i = 0; i < nummers.length; i++) {
+            const elements = nummers[i];
+            console.log(elements);
         }
     }
 }
