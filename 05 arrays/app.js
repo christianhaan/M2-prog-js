@@ -16,7 +16,15 @@ class App
             const element = array[i];
             console.log(i +": "+element);
         }
-
+        let indexToRemove = array.indexOf("bob dylan");
+        array.splice(indexToRemove,1,"big bad voodoo daddy");
+        array.splice(indexToRemove,2,"megadeth");
+        
+        for (let i = 0; i < array.length; i++) {
+            const element = array[i];
+            console.log(i +": "+element);
+        }
+        
         const nummers = [2, 5, 7];
         console.log(nummers);
         for (let i = 0; i < nummers.length; i++) {
