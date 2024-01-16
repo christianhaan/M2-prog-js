@@ -4,8 +4,15 @@ class App
     {
         console.log("hello world!");
 
-        uiButton.addEventListener("click", () => {
-            console.log("click!")
+        uiButton.addEventListener("click", (e) => {
+            const para = document.createElement("p");
+            const node = document.createTextNode("This is new.");
+            para.appendChild(node);
+            document.body.appendChild(para);
+        });
+
+        zelfbutton.addEventListener("click", () => {
+            console.log("click!");
         });
     }
 }
