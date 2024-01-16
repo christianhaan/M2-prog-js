@@ -4,13 +4,19 @@ class App
     {
         console.log("hello world!");
 
-        function tekenCirkel()
+        let g = canvasId.getContext('2d');
+
+        function tekenCirkel(x, y)
         {
-            g.beginpath();
-            g.arc(400,300,20,0,Math.PI*2);
+            g.beginPath();
+            g.arc(x,y,20,0,Math.PI*2);
             g.stroke();
             g.fill();
-            g.closepath();
+            g.closePath();
+        }
+
+        for (let i = 0; i < 200; i++) {
+            tekenCirkel(Math.random() * window.innerWidth, Math.random() *window.innerHeight);   
         }
     }
 }
