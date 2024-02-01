@@ -13,6 +13,7 @@ class Greet
         console.log("Greetings!");
     }
 }
+
 class Goodbye
 {
     constructor()
